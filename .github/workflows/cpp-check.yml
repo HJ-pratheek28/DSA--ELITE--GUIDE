@@ -1,0 +1,39 @@
+name: C++20 solution checks
+
+on:
+  push:
+    paths:
+      - '**/*.cpp'
+      - '.github/workflows/cpp-check.yml'
+  pull_request:
+    paths:
+      - '**/*.cpp'
+      - '.github/workflows/cpp-check.yml'
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up compiler
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y g++
+
+      - name: Compile each standalone solution
+        shell: bash
+        run: |
+          mapfile -t files < <(find . -type f -name '*.cpp' -not -path './.git/*' | sort)
+          if [ "${#files[@]}" -eq 0 ]; then
+            echo "No C++ solution files yet; nothing to compile."
+            exit 0
+          fi
+          mkdir -p /tmp/dsa-build
+          for file in "${files[@]}"; do
+            echo "::group::Compiling $file"
+            output="/tmp/dsa-build/$(echo "$file" | tr '/ ' '__').out"
+            g++ -std=c++20 -Wall -Wextra -Wshadow -Wconversion -pedantic -O2 "$file" -o "$output"
+            echo "::endgroup::"
+          done
