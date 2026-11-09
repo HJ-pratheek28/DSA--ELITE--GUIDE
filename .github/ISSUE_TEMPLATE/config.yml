@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Read the contribution guide
+    url: https://github.com/HJ-pratheek28/DSA--ELITE--GUIDE/blob/main/CONTRIBUTING.md
+    about: Follow the repository standards before proposing a change.
