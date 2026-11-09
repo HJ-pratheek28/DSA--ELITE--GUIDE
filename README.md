@@ -32,10 +32,18 @@ Build the ability to solve **unfamiliar algorithmic problems independently**. Th
 ## 🚀 Start here
 
 1. Read the [problem-solving protocol](docs/PROBLEM_SOLVING_PROTOCOL.md).
-2. Check the [curriculum and learning sequence](docs/ROADMAP.md).
-3. Begin with [C++20 foundations](00-cpp-foundations/README.md), unless you can already pass its exit test.
-4. Track evidence in [PROGRESS.md](PROGRESS.md).
-5. Use the [solution write-up template](templates/SOLUTION_TEMPLATE.md) for every meaningful problem.
+2. Follow the [24-month master roadmap](docs/ROADMAP.md).
+3. Use the [curated resource map](docs/RESOURCE_MAP.md) and [problem ladder](docs/PROBLEM_LADDER.md) for exact learning materials and practice.
+4. Begin with [C++20 foundations](00-cpp-foundations/README.md), unless you can already pass its exit test.
+5. Track evidence in [PROGRESS.md](PROGRESS.md).
+6. Use the [solution write-up template](templates/SOLUTION_TEMPLATE.md) for every meaningful problem.
+
+## 🧭 Learning system
+
+- [24-month master roadmap](docs/ROADMAP.md) — phases, month-by-month milestones, weekly schedule and mastery gates.
+- [Resource map](docs/RESOURCE_MAP.md) — the primary course/book, reference and practice platform for each topic.
+- [Curated problem ladder](docs/PROBLEM_LADDER.md) — sequenced CSES problems and contest practice.
+- [Progress tracker](PROGRESS.md) — evidence-based completion, not passive checklisting.
 
 ## 🧭 Curriculum
 
