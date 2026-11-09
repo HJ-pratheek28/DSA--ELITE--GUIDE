@@ -161,6 +161,50 @@ Study selectively and deeply; advanced topics are tools, not a checklist to memo
 
 **Rating progression:** use Codeforces/AtCoder rating only as a rough external signal. Do not optimise for rating at the expense of fundamentals. Move difficulty upward gradually and track performance across many contests.
 
+
+
+## Month-by-month execution plan
+
+The month labels are approximate. If a topic is not mastered, keep practising it and shift later months. The goal is durable skill, not finishing a spreadsheet on schedule.
+
+| Month | Main focus | Deliverable / exit evidence |
+|---:|---|---|
+| 1 | C++20, STL, debugging, complexity, basic proofs | 20–25 implementation problems; write and analyse solutions without copying |
+| 2 | Arrays, strings, frequency maps, prefix/suffix sums | Implement core patterns; solve 20–25 array/string problems |
+| 3 | Sorting, binary search, two pointers, sliding windows | Explain invariants; solve 20 mixed problems, including answer-space search |
+| 4 | Linked lists, stacks, queues, deques, heaps, monotonic structures | Implement structures; solve mixed linear-structure problems |
+| 5 | Recursion, recursion trees, subsets, permutations, backtracking | Derive recursion state and prove termination; solve 15–20 problems |
+| 6 | Binary trees, traversals, BST, tree properties, greedy basics | Implement traversals and core tree patterns; prove simple greedy choices |
+| 7 | Graph modelling, BFS/DFS, components, cycles, bipartite, topo sort, DSU | Implement graph toolkit; solve foundational CSES graph/tree tasks |
+| 8 | DP fundamentals, 1D/2D and grid DP | Write state definitions before code; solve 15–20 DP problems |
+| 9 | Knapsack, subset sum, coin change, LIS/LCS/edit distance | Explain transitions and iteration order; solve 15–20 problems |
+| 10 | Shortest paths, MST, DAG DP, tree DP | Select algorithms from graph constraints; solve mixed graph/DP tasks |
+| 11 | Bit manipulation, bitmasks, meet in the middle | Implement subset enumeration and bitmask DP basics |
+| 12 | Number theory: gcd, sieve, modular arithmetic, exponentiation | Build tested number-theory toolkit; solve CSES Mathematics subset |
+| 13 | Fenwick tree, segment tree, sparse table, range queries | Implement and test range-query structures |
+| 14 | KMP, Z, hashing, trie, Manacher | Implement two string algorithms from memory; solve string tasks |
+| 15 | SCC, bridges, articulation points, Euler tours, binary lifting | Implement graph/tree advanced basics; solve mixed graph tasks |
+| 16 | Offline queries, Mo's algorithm, sqrt decomposition, DSU on tree | Understand when offline processing helps; complete selected problems |
+| 17 | Persistent structures, merge sort tree, treap, wavelet structures | Study selected structures; build one fully tested implementation |
+| 18 | Flow, matching, advanced graph modelling | Implement Dinic; solve flow and matching problems |
+| 19 | Digit DP, rerooting, DP optimisation, geometry, FFT/NTT | Choose specialisms based on problem exposure; document preconditions |
+| 20 | Contest fundamentals: timing, selection, implementation reliability | One virtual contest per week + complete upsolving |
+| 21 | Mixed 1200–1600-ish contest practice (platform ratings are approximate) | Analyse performance across at least 4 contests |
+| 22 | Mixed 1500–1800-ish practice and weak-topic repair | Re-solve old problems and improve time-to-solve |
+| 23 | Harder modelling, multi-technique problems, selected advanced topics | Solve problems without topic labels; write full proofs |
+| 24 | Consolidation, mock contests, specialisation plan | Review the full error log and define next 6-month goals |
+
+### Monthly review gate
+
+At the end of each month, record:
+- Problems attempted, independently solved, and upsolved (separate counts)
+- Topics you can explain and implement without notes
+- Three recurring mistakes and how you will prevent them
+- At least five problems scheduled for delayed re-solving
+- One decision: advance, repeat, or repair prerequisites
+
+Do not force a fixed problem count. A useful target is 25–40 quality problems/month during foundational stages, with fewer but harder problems later. Review and independent re-solves matter more than raw volume.
+
 ## Weekly training template (15–20 hours)
 
 | Session | Work |
