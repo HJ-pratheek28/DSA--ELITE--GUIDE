@@ -71,8 +71,8 @@ private:
 // Iterative segment tree for range sum on half-open intervals [left, right).
 class SegmentTreeSum {
 public:
-    explicit SegmentTreeSum(const std::vector<long long>& values) {
-        size_ = 1;
+    explicit SegmentTreeSum(const std::vector<long long>& values)
+        : size_(1), length_(static_cast<int>(values.size())) {
         while (size_ < static_cast<int>(values.size())) size_ <<= 1;
         tree_.assign(2 * size_, 0);
         for (int i = 0; i < static_cast<int>(values.size()); ++i) {
@@ -84,7 +84,7 @@ public:
     }
 
     void set(int index, long long value) {
-        assert(index >= 0 && index < size_);
+        assert(index >= 0 && index < length_);
         int p = size_ + index;
         tree_[p] = value;
         while (p > 1) {
@@ -94,7 +94,7 @@ public:
     }
 
     long long sum(int left, int right) const {
-        assert(left >= 0 && left <= right && right <= size_);
+        assert(left >= 0 && left <= right && right <= length_);
         long long result = 0;
         left += size_;
         right += size_;
@@ -108,7 +108,8 @@ public:
     }
 
 private:
-    int size_ = 1;
+    int size_;
+    int length_;
     std::vector<long long> tree_;
 };
 
