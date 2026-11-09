@@ -1,0 +1,26 @@
+# Compiled binaries and object files
+*.o
+*.obj
+*.out
+*.exe
+a.out
+bin/
+build/
+
+# Debug / profiling output
+*.dSYM/
+*.prof
+*.gcda
+*.gcno
+
+# Editor / OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local scratch files
+scratch/
+temp/
