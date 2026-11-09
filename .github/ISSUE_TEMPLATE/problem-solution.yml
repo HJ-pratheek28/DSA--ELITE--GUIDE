@@ -1,0 +1,31 @@
+name: Add a problem solution
+description: Propose a problem write-up or implementation to add to the guide.
+title: "[Problem]: "
+labels: ["problem-practice"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Original problem URL
+      placeholder: https://...
+    validations:
+      required: true
+  - type: input
+    id: topic
+    attributes:
+      label: Topic / pattern
+    validations:
+      required: true
+  - type: textarea
+    id: learning
+    attributes:
+      label: Why this problem belongs
+      description: What concept or reasoning skill does it teach?
+    validations:
+      required: true
+  - type: textarea
+    id: approach
+    attributes:
+      label: Key idea / expected approach
+    validations:
+      required: true
