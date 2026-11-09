@@ -4,10 +4,12 @@ on:
   push:
     paths:
       - '**/*.cpp'
+      - '**/*.hpp'
       - '.github/workflows/cpp-check.yml'
   pull_request:
     paths:
       - '**/*.cpp'
+      - '**/*.hpp'
       - '.github/workflows/cpp-check.yml'
 
 jobs:
@@ -22,12 +24,12 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y g++
 
-      - name: Compile each standalone solution
+      - name: Compile standalone C++ files
         shell: bash
         run: |
           mapfile -t files < <(find . -type f -name '*.cpp' -not -path './.git/*' | sort)
           if [ "${#files[@]}" -eq 0 ]; then
-            echo "No C++ solution files yet; nothing to compile."
+            echo "No C++ source files yet; nothing to compile."
             exit 0
           fi
           mkdir -p /tmp/dsa-build
@@ -37,3 +39,8 @@ jobs:
             g++ -std=c++20 -Wall -Wextra -Wshadow -Wconversion -pedantic -O2 "$file" -o "$output"
             echo "::endgroup::"
           done
+
+      - name: Run reference implementation smoke tests
+        run: |
+          g++ -std=c++20 -Wall -Wextra -Wshadow -Wconversion -pedantic -O2 templates/cpp/smoke_test.cpp -o /tmp/dsa-smoke
+          /tmp/dsa-smoke
