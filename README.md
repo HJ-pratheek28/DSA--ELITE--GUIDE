@@ -1,80 +1,147 @@
-# DSA ELITE GUIDE
+# DSA — ELITE GUIDE
 
-> Train to solve unfamiliar problems, not to memorise solutions.
+<p align="center">
+  <strong>A systematic training ground for algorithmic problem solving.</strong><br/>
+  From fundamentals to advanced algorithms, with proofs, implementations, deliberate practice and measurable mastery.
+</p>
 
-A structured, proof-driven roadmap from core programming foundations to advanced algorithms and competitive programming.
+<p align="center">
+  <img alt="Language" src="https://img.shields.io/badge/Language-C%2B%2B20-00599C?logo=cplusplus&logoColor=white"/>
+  <img alt="Focus" src="https://img.shields.io/badge/Focus-DSA%20%7C%20CP-7C3AED"/>
+  <img alt="Learning" src="https://img.shields.io/badge/Method-Proof--driven-0F766E"/>
+  <img alt="Status" src="https://img.shields.io/badge/Status-Actively%20building-orange"/>
+</p>
 
-**Primary language:** C++20 · **Secondary language:** Python  
-**North star:** independent problem solving, rigorous reasoning, implementation fluency and contest performance.
+<p align="center">
+  <a href="#-start-here">Start here</a> ·
+  <a href="#-curriculum">Curriculum</a> ·
+  <a href="#-repository-map">Repository map</a> ·
+  <a href="#-standards">Standards</a>
+</p>
 
-## The training philosophy
+---
 
-Every topic follows the same loop:
+## 🎯 Mission
 
-**Understand → Brute force → Find the bottleneck → Derive → Prove → Implement → Test → Review**
+Build the ability to solve **unfamiliar algorithmic problems independently**. This is not a dump of copied solutions or a checklist of videos watched. Every topic should connect mathematical reasoning, algorithm design, proof, implementation and practice.
 
-A problem is not mastered because its accepted solution is understood. It is mastered when you can reproduce the reasoning later, explain why it works, and recognise when the technique applies to a new problem.
+**Primary language:** C++20  
+**Secondary language:** Python for experiments, quick validation and alternative implementations.  
+**Long-term direction:** strong algorithmic fundamentals and competitive programming. Rating targets are milestones, never substitutes for skill.
 
-## Roadmap
+## 🚀 Start here
 
-| Phase | Topics | Outcome |
-|---|---|---|
-| 00 | [C++ foundations](00-cpp-foundations/README.md) | Write reliable modern C++ and use STL confidently |
-| 01 | [Mathematics](01-mathematics/README.md) | Discrete maths, combinatorics and number foundations |
-| 02 | [Algorithm analysis](02-algorithm-analysis/README.md) | Complexity, recurrences, invariants and proofs |
-| 03 | [Arrays and strings](03-arrays-and-strings/README.md) | Master sequence manipulation and subarray reasoning |
-| 04 | Searching and sorting | Binary search, sorting and selection |
-| 05 | [Problem-solving patterns](05-problem-solving-patterns/README.md) | Two pointers, windows, prefix sums, monotonic structures |
-| 06–07 | Linked lists, stacks, queues and heaps | Choose and implement core data structures |
-| 08–10 | Recursion, trees, BSTs and greedy | Model recursive state and prove greedy choices |
-| 11 | Graphs | Traversal, connectivity, shortest paths, spanning trees, flow |
-| 12 | Dynamic programming | State design, transitions, optimisation |
-| 13–16 | Advanced data structures and algorithms | Range queries, strings, number theory, geometry and optimisation |
-| 17 | Competitive programming | Contest practice, upsolving and performance analysis |
+1. Read the [problem-solving protocol](docs/PROBLEM_SOLVING_PROTOCOL.md).
+2. Check the [curriculum and learning sequence](docs/ROADMAP.md).
+3. Begin with [C++20 foundations](00-cpp-foundations/README.md), unless you can already pass its exit test.
+4. Track evidence in [PROGRESS.md](PROGRESS.md).
+5. Use the [solution write-up template](templates/SOLUTION_TEMPLATE.md) for every meaningful problem.
 
-The complete topic checklist lives in [PROGRESS.md](PROGRESS.md). The phase pages will grow into detailed notes, implementations and curated practice sets as each module is developed.
+## 🧭 Curriculum
 
-## How to study
+| # | Module | Core outcome |
+|---:|---|---|
+| 00 | [C++20 Foundations](00-cpp-foundations/README.md) | Reliable language, STL, memory and implementation |
+| 01 | [Mathematics](01-mathematics/README.md) | Discrete maths, counting, probability and number basics |
+| 02 | [Algorithm Analysis](02-algorithm-analysis/README.md) | Complexity, recurrences, invariants and proofs |
+| 03 | [Arrays & Strings](03-arrays-and-strings/README.md) | Sequence reasoning, prefix methods and frequency tools |
+| 04 | [Searching & Sorting](04-searching-and-sorting/README.md) | Sorting, binary search, selection and search-space reduction |
+| 05 | [Problem-Solving Patterns](05-problem-solving-patterns/README.md) | Two pointers, windows, monotonic structures and more |
+| 06 | [Linked Lists](06-linked-lists/README.md) | Pointer manipulation and linked structure invariants |
+| 07 | [Stacks, Queues & Heaps](07-stacks-queues-heaps/README.md) | Linear ADTs, monotonic structures and priority queues |
+| 08 | [Recursion & Backtracking](08-recursion-backtracking/README.md) | State-space search, pruning and recursion trees |
+| 09 | [Trees & BSTs](09-trees-and-bst/README.md) | Traversals, tree DP, LCA and structural reasoning |
+| 10 | [Greedy Algorithms](10-greedy/README.md) | Exchange arguments, scheduling and matroids intuition |
+| 11 | [Graph Algorithms](11-graphs/README.md) | Traversal, connectivity, shortest paths, MST and flow |
+| 12 | [Dynamic Programming](12-dynamic-programming/README.md) | State design, transitions, proofs and optimisation |
+| 13 | [Advanced Data Structures](13-advanced-data-structures/README.md) | Range queries, persistence and specialised structures |
+| 14 | [String Algorithms](14-string-algorithms/README.md) | Pattern matching, tries, hashing and suffix structures |
+| 15 | [Number Theory](15-number-theory/README.md) | Modular arithmetic, primes, inverses and combinatorics |
+| 16 | [Advanced Algorithms](16-advanced-algorithms/README.md) | Flows, geometry, FFT/NTT and optimisation techniques |
+| 17 | [Competitive Programming](17-competitive-programming/README.md) | Contest execution, upsolving and rating progression |
 
-1. Read the concept and derive the key idea yourself.
-2. Implement the core technique without copying.
-3. Solve problems in increasing difficulty.
-4. For each problem, write down the brute force, bottleneck, insight, proof and complexity.
-5. Re-solve missed problems after 1 day, 1 week and 1 month.
-6. Take contests regularly and upsolve every problem you could not solve.
+**Progress:** use the [topic mastery tracker](PROGRESS.md). A module is complete only when its exit criteria are demonstrated on unseen problems.
 
-Suggested 3-hour session: 30 min theory/proof, 75 min focused practice, 60 min independent problem, 15 min review. Adjust the time; keep the loop.
+## 🗂️ Repository map
 
-## Quality bar for a completed topic
+```text
+DSA--ELITE--GUIDE/
+├── 00-cpp-foundations/
+├── 01-mathematics/
+├── 02-algorithm-analysis/
+├── 03-arrays-and-strings/
+├── 04-searching-and-sorting/
+├── 05-problem-solving-patterns/
+├── 06-linked-lists/
+├── 07-stacks-queues-heaps/
+├── 08-recursion-backtracking/
+├── 09-trees-and-bst/
+├── 10-greedy/
+├── 11-graphs/
+├── 12-dynamic-programming/
+├── 13-advanced-data-structures/
+├── 14-string-algorithms/
+├── 15-number-theory/
+├── 16-advanced-algorithms/
+├── 17-competitive-programming/
+├── docs/
+├── templates/
+├── .github/
+├── .editorconfig
+├── .gitignore
+├── CONTRIBUTING.md
+├── PROGRESS.md
+└── README.md
+```
 
-- [ ] Explain the concept without notes.
-- [ ] State when the technique is useful and when it is not.
-- [ ] Implement the canonical algorithm from memory.
-- [ ] Analyse time and auxiliary space complexity.
-- [ ] Prove correctness or justify the invariant.
-- [ ] Solve unseen problems, including at least one mixed problem.
-- [ ] Record mistakes and schedule spaced revision.
+## 🧠 The problem-solving system
 
-## Repository system
+**Understand → Model → Brute force → Find the bottleneck → Derive → Prove → Implement → Test → Review**
 
-- `*/README.md` — concept map, prerequisites and learning sequence.
-- `problems/` — problem-specific implementations and reasoning.
-- [Problem-solving protocol](docs/PROBLEM_SOLVING_PROTOCOL.md) — repeatable approach.
-- [Mistake log](templates/MISTAKE_LOG.md) — turn failed attempts into learning.
-- [Solution template](templates/SOLUTION_TEMPLATE.md) — consistent write-ups.
-- [Progress tracker](PROGRESS.md) — evidence-based progression.
+For each problem, document:
+- The constraints and feasible complexity
+- The brute-force baseline and its bottleneck
+- The key observation and invariant
+- A correctness argument
+- Time and auxiliary-space complexity
+- Edge cases and adversarial tests
+- What you learned and when you will re-solve it
 
-## High-quality references
+Full process: [Problem-solving protocol](docs/PROBLEM_SOLVING_PROTOCOL.md).
 
-- [LearnCpp](https://www.learncpp.com/) — C++ learning sequence.
-- [cppreference](https://en.cppreference.com/w/) — language and STL reference.
-- [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines) — safe, effective modern C++.
-- [MIT 6.006: Introduction to Algorithms](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/) — algorithmic foundations.
-- [MIT 6.042J: Mathematics for Computer Science](https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/) — proof and discrete mathematics.
-- [CSES Problem Set](https://cses.fi/problemset/) — structured algorithm practice.
-- [USACO Guide](https://usaco.guide/) — topic-based explanations and problems.
-- [CP-Algorithms](https://cp-algorithms.com/) — competitive-programming reference.
-- [Codeforces EDU](https://codeforces.com/edu/courses) — structured training.
-- [AtCoder](https://atcoder.jp/) — regular contests and practice.
+## 📏 Standards
 
-**Rule:** use editorials as feedback after a serious attempt, not as a substitute for thinking.
+- **No unexplained code:** every solution needs a concise reasoning note.
+- **No pattern guessing:** explain the condition that makes a technique valid.
+- **No complexity hand-waving:** analyse the actual operations and constraints.
+- **No sample-only testing:** test boundaries, duplicates and adversarial cases.
+- **No fake progress:** mark mastery only after independent re-solves.
+- **C++20 first:** readable, warning-clean code; avoid undefined behaviour and overflow.
+- **Cite problem sources:** include the original platform and problem URL in each write-up.
+
+See [contribution standards](CONTRIBUTING.md) and [quality checklist](docs/QUALITY_STANDARDS.md).
+
+## 📚 Curated references
+
+| Resource | Best use |
+|---|---|
+| [LearnCpp](https://www.learncpp.com/) | C++ language foundations |
+| [cppreference](https://en.cppreference.com/w/) | Precise language and STL reference |
+| [MIT 6.006](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/) | Algorithm design and analysis |
+| [MIT 6.042J](https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/) | Proofs and discrete mathematics |
+| [CSES Problem Set](https://cses.fi/problemset/) | Structured algorithm practice |
+| [USACO Guide](https://usaco.guide/) | Topic-based explanations and problem ladders |
+| [CP-Algorithms](https://cp-algorithms.com/) | Competitive programming reference |
+| [Codeforces EDU](https://codeforces.com/edu/courses) | Structured CP training |
+| [AtCoder](https://atcoder.jp/) | Contests and implementation practice |
+| [KACTL](https://github.com/kth-competitive-programming/kactl) | Compact reference implementations |
+
+## 🤝 Contributing to your own knowledge base
+
+This repository is designed to evolve. Follow [CONTRIBUTING.md](CONTRIBUTING.md) when adding notes, solutions or modules. Prefer small, focused commits with descriptive messages.
+
+---
+
+<p align="center">
+  <sub>Built for depth, consistency and independent thinking. Learn the idea. Prove the idea. Implement the idea.</sub>
+</p>
