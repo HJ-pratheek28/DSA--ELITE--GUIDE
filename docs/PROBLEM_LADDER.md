@@ -109,7 +109,7 @@ Focus: prefix sums, sparse table, Fenwick tree, segment tree, coordinate compres
 - [Word Combinations](https://cses.fi/problemset/task/1731)
 - [Counting Numbers](https://cses.fi/problemset/task/2220)
 - [Exponentiation](https://cses.fi/problemset/task/1095)
-- [Counting Divisors](https://cses.fi/problemset/task/1081)
+- [Counting Divisors](https://cses.fi/problemset/task/1713)
 - [Common Divisors](https://cses.fi/problemset/task/1081)
 - [Binomial Coefficients](https://cses.fi/problemset/task/1079)
 - [Creating Strings II](https://cses.fi/problemset/task/1715)
